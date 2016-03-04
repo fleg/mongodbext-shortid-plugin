@@ -1,6 +1,6 @@
 {
   "name": "mongodbext-shortid-plugin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "mongodbext shortid plugin",
   "author": "Aleksey Timchenko <flegmatik.bel@gmail.com>",
   "license": "MIT",
