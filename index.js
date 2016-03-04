@@ -16,7 +16,10 @@ var populateIds = function(objs, ids) {
 
 module.exports = function(collection, params) {
 	params = params || {};
-	params.duplicateRetries = params.duplicateRetries || 5;
+
+	if (typeof params.duplicateRetries !== 'number') {
+		params.duplicateRetries = 5;
+	}
 
 	if ('seed' in params) {
 		shortid.seed(params.seed);
